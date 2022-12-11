@@ -2,6 +2,10 @@
 
 ## My Setups
 ### Preonic rev3 MassDrop X OLKB
+![Preonic Layer 0](./preonic/preonic_rev3_drop_qwerty_layer00.PNG)
+![Preonic Layer 1](./preonic/preonic_rev3_drop_qwerty_layer01.PNG)
+![Preonic Layer 2](./preonic/preonic_rev3_drop_qwerty_layer02.PNG)
+
 Hardware:
 *  Drop X OLKB Preonic 
 * Kaihua hotswap sockets
