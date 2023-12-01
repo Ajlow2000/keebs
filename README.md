@@ -1,10 +1,10 @@
-# QMK-Keyboards
+# Keyboards
 
-## My Setups
+## Keymap References
 
 <table>
 <tr>
-<th> Kyria/Elora </th>
+<th> Kyria </th>
 <th> Preonic </th>
 </tr>
 <tr>
@@ -12,11 +12,10 @@
 
 ```
 # _QWERTY 
-CV  1   2   3   4   5       6   7   8   9   0   LCK
-TB  Q   W   E   R   T       Y   U   I   O   P   -
-ESC A   S   D   F   G       H   J   K   L   ;   '
-SFT Z   X   C   V   B       N   M   ,   .   /   ENT
-        WIN ALT SPC L1      L2  SPC BSP DEL
+TB  Q   W   E   R   T                    Y   U   I   O   P   -
+ESC A   S   D   F   G                    H   J   K   L   ;   '
+SFT Z   X   C   V   B  XXX XXX   XXX XXX N   M   ,   .   /   ENT
+        WIN ALT SPC L1 XXX XXX   XXX XXX L2  SPC BSP DEL
 ```
 
 </td>
