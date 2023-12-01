@@ -22,6 +22,7 @@ SFT Z   X   C   V   B       N   M   ,   .   /   ENT
 </td>
 <td>
 
+### Keymap
 ```
 # _QWERTY 
 CV  1   2   3   4   5   6   7   8   9   0   LCK
@@ -43,6 +44,8 @@ XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX
 # 3 _ADJUST
 
 ```
+### Photo
+![Preonic Photo](./preonic/preonic_repreonic_rev3_drop_qwerty_layer00.PNG)
 
 </td>
 </tr>
