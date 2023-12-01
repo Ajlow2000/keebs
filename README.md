@@ -3,23 +3,11 @@
 ## My Setups
 ### Preonic rev3 MassDrop X OLKB
 
-#### Layer 0
-![Preonic Layer 0](./preonic/preonic_rev3_drop_qwerty_layer00.PNG)
+_QWERTY
+```
+CV*  1 2 3 4 5 6 7 8 9 0 LOCK*
+TB*  Q W E R T Y U I O P -
+ESC* A S D F G H J K L ; '
+SFT* Z X C V B N M , . / ENT
 
-#### Layer 1
-![Preonic Layer 1](./preonic/preonic_rev3_drop_qwerty_layer01.PNG)
-
-#### Layer 2
-![Preonic Layer 2](./preonic/preonic_rev3_drop_qwerty_layer02.PNG)
-
-Hardware:
-*  Drop X OLKB Preonic 
-* Kaihua hotswap sockets
-* Gateron Aliaz Silent Switches (80g)
-* YMDK ZDA Matcha Keycaps
-
-## Resources
-* [QMK Configurator](https://config.qmk.fm/) - For graphically editing QMK profiles
-* [Keyboard Tester](https://config.qmk.fm/#/test) - For finding dead switches and such
-* [QMK Keycodes Reference](https://docs.qmk.fm/#/keycodes) - For quick reference
-* [QMK Documentation](https://docs.qmk.fm/#/) - For any and all questions
+```
