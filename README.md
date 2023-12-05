@@ -56,15 +56,22 @@ ___ <   |   -   >   /   \   ~      ___ ___ &   }   ]   )   #  ___
 
 # L6 _NUMBERS
 ___ X   X   X   X   X                      :   7   8   9   x   ___
-___ X   X   X   L3  X                      .   4   5   6   x   ___
+___ X   L8  L7  L6  X                      .   4   5   6   x   ___
 ___ X   X   X   X   X   ___ ___    ___ ___ /   1   2   3   X   ___
         ___ ___ ___ ___ ___ ___    ___ ___ ___ 0   ___ ___
 
 # L6 _FUNCTIONS
-___ X   X   X   X   X                      :   F7  F8   F9   F10 ___
-___ X   X   X   X   X                      .   F4  F5   F6   F11 ___
-___ X   X   X   X   X   ___ ___    ___ ___ /   F1  F2   F3   F12 ___
-        ___ ___ ___ ___ ___ ___    ___ ___ ___ 0   VOLU VOLD
+___ X   X   X   X   X                      BRU F7  F8  F9  F10 ___
+___ X   X   X   X   X                      BRD F4  F5  F6  F11 ___
+___ X   X   X   X   X   ___ ___    ___ ___ /   F1  F2  F3  F12 ___
+        ___ ___ ___ ___ ___ ___    ___ ___ ___ 0   VLU VLD
+
+# L7 _ADJUST
+___ RST X   X   X   X                      XXX XXX XXX XXX XXX ___  # TODO bluetooth stuff
+___ X   X   X   X   X                      XXX XXX XXX XXX XXX ___
+___ X   X   X   X   X   ___ ___    ___ ___ XXX XXX XXX XXX XXX ___
+        ___ ___ ___ ___ ___ ___    ___ ___ ___ XXX XXX XXX
+
 ```
 
 </td>
