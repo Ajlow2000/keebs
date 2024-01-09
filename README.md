@@ -11,11 +11,6 @@
 <td>
 
 ```
-Base layer -- symbols
-            \ Numbers -- Functions
-                      \  Adjust
-                      \  Gaming?
-
 # L0 _BASE
 TB  XXX XXX XXX XXX XXX                    XXX XXX XXX XXX XXX CV
 ESC XXX XXX XXX XXX XXX                    XXX XXX XXX XXX XXX ENT
