@@ -68,7 +68,7 @@ ___ X   X   X   X   X   ___ ___    ___ ___ /   F1  F2  F3  F12 ___
 
 # L7 _ADJUST
 ___ RST X   X   X   X                      XXX XXX XXX XXX XXX ___  # TODO bluetooth stuff
-___ X   X   X   X   X                      XXX XXX XXX XXX XXX ___
+___ X   X   X   X   X                      XXX XXX XXX XXX XXX ___  #   quantum codes,
 ___ X   X   X   X   X   ___ ___    ___ ___ XXX XXX XXX XXX XXX ___
         ___ ___ ___ ___ ___ ___    ___ ___ ___ XXX XXX XXX
 
