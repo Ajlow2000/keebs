@@ -74,24 +74,40 @@ ___ X   X   X   X   X   ___ ___    ___ ___ XXX XXX XXX XXX XXX ___
 
 ### Keymap
 ```
-# _QWERTY 
-CV  1   2   3   4   5   6   7   8   9   0   LCK
-TB  Q   W   E   R   T   Y   U   I   O   P   -
-ESC A   S   D   F   G   H   J   K   L   ;   '
-SFT Z   X   C   V   B   N   M   ,   .   /   ENT
-XXX XXX WIN ALT SPC L1  L2  SPC BSP DEL XXX XXX
+# QWE 
+CV  1   2   3   4   5       6   7   8   9   0   LCK
+TB  Q   W   E   R   T       Y   U   I   O   P   TB
+ESC A   S   D   F   G       H   J   K   L   ;   ENT
+SFT Z   X   C   V   B       N   M   ,   .   /   SFT
+xxx xxx WIN ALT SPC SYM     NAV NUM BSP DEL xxx xxx
 
-# 1 _SYMBOLS
+# 1 SYM
+F1  F2  F3  F4  F5  F6      F7  F8  F9  F10 F11 F12
+___ \   '   "   %   ?       !   ]   [   `   :   ___
+___ ^   =   _   $   *       @   )   (   ~   ;   ___
+___ <   |   -   >   /       +   }   {   #   .   ___
+___ ___ ___ ___ ___ ___     ___ ___ ___ ___ ___ ___
 
+# 2 NAV
+___ xxx xxx xxx xxx xxx     xxx xxx xxx xxx xxx ___
+___ xxx xxx MSU xxx xxx     MUT VLD VLU `   xxx ___
+___ QWE MSL MSD MSR *       ←   ↓   ↑   →   xxx ___
+___ xxx xxx xxx xxx GAM     xxx BRD BRU xxx xxx ___
+___ ___ ___ ___ ___ ___     ___ ___ ___ ___ ___ ___
 
-# 2 _NAVIGATION
-XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX
-XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX
-XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX
-XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX
-XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX
+# 3 NUM
+___ xxx xxx xxx xxx xxx     xxx xxx xxx xxx xxx ___
+___ F1  F4  F7  F10 xxx     /   7   8   9   xxx ___
+___ F2  F5  F8  F11 xxx     :   4   5   6   xxx ___
+___ F3  F6  F9  F12 xxx     .   1   2   3   0   ___
+___ ___ ___ ___ ___ ___     ___ ___ ___ ___ ___ ___
 
-# 3 _ADJUST
+# GAM
+ESC ___ ___ ___ ___ ___     ___ ___ ___ ___ ___ BSP
+TB  ___ ___ ___ ___ ___     ___ ___ ___ ___ ___ ESC 
+CTL ___ ___ ___ ___ ___     ___ ___ ___ ___ ___ ENT
+SFT ___ ___ ___ ___ ___     ___ ___ ___ ___ ___ F4
+xxx xxx CTL ALT SPC SYM     NAV NUM BSP F1  F2  xxx
 
 ```
 ### Photo
