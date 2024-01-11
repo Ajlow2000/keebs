@@ -23,7 +23,7 @@ F1  F2  F3  F4  F5  F6      F7  F8  F9  F10 F11 F12
 #### NAV
 ```
 ___ xxx xxx xxx xxx xxx     xxx xxx xxx xxx xxx ___
-    xxx xxx MSU xxx xxx     MUT VLD VLU `   xxx
+    xxx xxx MSU xxx xxx     MUT VLD VLU xxx xxx
     QWE MSL MSD MSR xxx     ←   ↓   ↑   →   xxx
     xxx xxx xxx xxx GAM     xxx BRD BRU xxx xxx
 ```
