@@ -71,7 +71,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,          XXXXXXX,                             XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,    XXXXXXX
     ),
 
-    [_SYM] = LAYOUT_myr(
+    [_NAV] = LAYOUT_myr(
         _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,          XXXXXXX, XXXXXXX,           XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______,
         QK_BOOT, XXXXXXX, XXXXXXX, KC_MS_U, XXXXXXX, XXXXXXX,          XXXXXXX, XXXXXXX,           KC_MUTE, KC_VOLD, KC_VOLU, XXXXXXX, XXXXXXX, G(KC_L),
         _______, DF_Q,    KC_MS_L, KC_MS_D, KC_MS_R, XXXXXXX,          XXXXXXX, XXXXXXX,           KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, XXXXXXX, _______,
