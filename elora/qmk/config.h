@@ -27,6 +27,8 @@
 #define TAPPING_TERM_PER_KEY
 #define DOUBLE_TAP_SHIFT_TURNS_ON_CAPS_WORD
 
+#define RGBLIGHT_DEFAULT_ON false
+
 // Mouse key speed and acceleration.
 #undef MOUSEKEY_DELAY
 #define MOUSEKEY_DELAY          0
