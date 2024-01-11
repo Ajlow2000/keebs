@@ -18,8 +18,7 @@
 
 ## Hardware features
 
-# OLED: optional, can be installed in socket
-OLED_ENABLE = yes          # Enable OLEDs, `yes` or `no`
+OLED_ENABLE = yes
 
 # Audio: optional, requires soldering
 # The Elora is equipped with a footprint
@@ -34,3 +33,7 @@ EXTRAKEY_ENABLE = yes      # Audio and system control
 
 # N-key rollover instead of 6-key rollover
 NKRO_ENABLE = yes          # Enable N-Key Rollover
+
+TAP_DANCE_ENABLE = yes
+KEY_OVERRIDE_ENABLE = yes
+CAPS_WORD_ENABLE = yes
