@@ -37,3 +37,5 @@ NKRO_ENABLE = yes          # Enable N-Key Rollover
 TAP_DANCE_ENABLE = yes
 KEY_OVERRIDE_ENABLE = yes
 CAPS_WORD_ENABLE = yes
+ENCODER_ENABLE = yes
+ENCODER_MAP_ENABLE = yes

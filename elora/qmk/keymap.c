@@ -137,16 +137,27 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * DO NOT edit the rev1.c file; instead override the weakly defined default functions by your own.
  */
 
-/* DELETE THIS LINE TO UNCOMMENT (1/2)
+/*
 #ifdef OLED_ENABLE
 bool oled_task_user(void) {
   // Your code goes here
 }
 #endif
+*/
 
-#ifdef ENCODER_ENABLE
-bool encoder_update_user(uint8_t index, bool clockwise) {
-  // Your code goes here
-}
+#if defined(ENCODER_MAP_ENABLE)
+const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
+    [_QWERTY]       = { ENCODER_CCW_CW(KC_VOLD,      KC_VOLU),          ENCODER_CCW_CW(KC_BRID,      KC_BRIU) },
+    [_NAV]          = { ENCODER_CCW_CW(KC_MS_L,      KC_MS_R),          ENCODER_CCW_CW(KC_MS_D,      KC_MS_U) },
+    [_SYM]          = { ENCODER_CCW_CW(G(S(KC_TAB)), G(KC_TAB)),        ENCODER_CCW_CW(A(S(KC_TAB)), A(KC_TAB)) },
+    [_NUM]          = { ENCODER_CCW_CW(C(KC_MINS),   C(KC_PLUS)),       ENCODER_CCW_CW(XXXXXXX,      XXXXXXX) },
+    [_GAME_OVERLAY] = { ENCODER_CCW_CW(KC_VOLD,      KC_VOLU),          ENCODER_CCW_CW(KC_BRID,      KC_BRIU) },
+    // [_RECURVA]      = { ENCODER_CCW_CW(KC_VOLD,      KC_VOLU),          ENCODER_CCW_CW(KC_BRID,      KC_BRIU) },
+};
 #endif
-DELETE THIS LINE TO UNCOMMENT (2/2) */
+
+// #ifdef ENCODER_ENABLE
+// bool encoder_update_user(uint8_t index, bool clockwise) {
+//   // Your code goes here
+// }
+// #endif

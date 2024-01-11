@@ -40,3 +40,10 @@
 #define MOUSEKEY_MAX_SPEED      6
 #undef MOUSEKEY_TIME_TO_MAX
 #define MOUSEKEY_TIME_TO_MAX    64
+
+// Encoders
+// #define ENCODERS_PAD_A { B12 }
+// #define ENCODERS_PAD_B { B13 }
+
+// #define ENCODER_RESOLUTION 1
+//#define ENCODER_RESOLUTIONS { 4, 2 }   // defined per encoder
