@@ -49,3 +49,6 @@
 
 #define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
 #define CAPS_WORD_INVERT_ON_SHIFT
+
+// Activate Command with Left Ctrl + Right Ctrl.
+#define IS_COMMAND() (get_mods() == MOD_MASK_CTRL)
