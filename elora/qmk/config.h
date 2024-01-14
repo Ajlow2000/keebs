@@ -25,7 +25,12 @@
 #define TAPPING_TOGGLE 2
 #define TAPPING_TERM 200
 #define TAPPING_TERM_PER_KEY
-#define DOUBLE_TAP_SHIFT_TURNS_ON_CAPS_WORD
+
+#define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
+#define CAPS_WORD_INVERT_ON_SHIFT
+
+// Activate Command with Left Ctrl + Right Ctrl.
+#define IS_COMMAND() (get_mods() == MOD_MASK_CTRL)
 
 #define RGBLIGHT_DEFAULT_ON false
 
