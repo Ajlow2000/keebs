@@ -15,20 +15,20 @@ CV  1   2   3   4   5       6   7   8   9   0   LCK
 #### Symbols
 ```
 F1  F2  F3  F4  F5  F6      F7  F8  F9  F10 F11 F12
-    \   '   "   %   ?       !   ]   [   `   :
-    ^   =   _   $   *       @   )   (   ~   ;
-    <   |   -   >   /       +   }   {   #   &
+    \   '   "   %   ?       !   ]   [   `   ;
+    ^   =   _   $   *       @   }   {   ~   :
+    <   |   -   >   /       +   )   (   #   &
 ```
 
 #### Navigation
 ```
 ___ xxx xxx xxx xxx xxx     xxx xxx xxx xxx xxx ___
-    xxx xxx MSU xxx xxx     MUT VLD VLU xxx xxx
+BTL xxx xxx MSU xxx xxx     MUT VLD VLU xxx xxx LCK
     QWE MSL MSD MSR xxx     ←   ↓   ↑   →   xxx
     xxx xxx xxx xxx GAM     xxx BRD BRU xxx xxx
 ```
 
-#### NUM
+#### Numbers
 ```
 ___ xxx xxx xxx xxx xxx     xxx xxx xxx xxx xxx ___
     F1  F4  F7  F10 xxx     /   7   8   9   xxx
@@ -41,26 +41,26 @@ ___ xxx xxx xxx xxx xxx     xxx xxx xxx xxx xxx ___
 #### Kyria/Elora: Standard
 ```
 CV  ___ ___ ___ ___ ___                    ___ ___ ___ ___ ___ LCK
-TB  ___ ___ ___ ___ ___                    ___ ___ ___ ___ ___ TB
+TAB ___ ___ ___ ___ ___                    ___ ___ ___ ___ ___ TAB
 ESC ___ ___ ___ ___ ___                    ___ ___ ___ ___ ___ ENT
-SFT ___ ___ ___ ___ ___ ___ ___    ___ ___ ___ ___ ___ ___ ___ SFT
-            ROT WIN ALT SPC SYM    NAV NUM BSP DEL ROT
+SFT ___ ___ ___ ___ ___ CTL F5     F11 C+S ___ ___ ___ ___ ___ SFT
+            ROT ALT SPC SYM WIN    TAB NAV NUM BSP ROT
 ```
 
 #### Kyria/Elora: Game
 ```
 ESC ___ ___ ___ ___ ___                    ___ ___ ___ ___ ___ BSP
-TB  ___ ___ ___ ___ ___                    ___ ___ ___ ___ ___ ESC
+TAB ___ ___ ___ ___ ___                    ___ ___ ___ ___ ___ ESC
 CTL ___ ___ ___ ___ ___                    ___ ___ ___ ___ ___ ENT
-SFT ___ ___ ___ ___ ___ ___ ___    ___ ___ ___ ___ ___ ___ ___ F4
-            ROT CTL ALT SPC SYM    NAV NUM BSP F1  ROT
+SFT ___ ___ ___ ___ ___ ALT ___    F1  F2  ___ ___ ___ ___ ___ ENT
+            ROT CTL SPC SYM WIN    F4  NAV NUM BSP ROT
 ```
 
 
 #### Preonic: Standard 
 ```
 CV  ___ ___ ___ ___ ___     ___ ___ ___ ___ ___ LCK
-TB  ___ ___ ___ ___ ___     ___ ___ ___ ___ ___ TB
+TAB ___ ___ ___ ___ ___     ___ ___ ___ ___ ___ TAB
 ESC ___ ___ ___ ___ ___     ___ ___ ___ ___ ___ ENT
 SFT ___ ___ ___ ___ ___     ___ ___ ___ ___ ___ SFT
 xxx xxx WIN ALT SPC SYM     NAV NUM BSP DEL xxx xxx
@@ -69,7 +69,7 @@ xxx xxx WIN ALT SPC SYM     NAV NUM BSP DEL xxx xxx
 #### Preonic: Game 
 ```
 ESC ___ ___ ___ ___ ___     ___ ___ ___ ___ ___ BSP
-TB  ___ ___ ___ ___ ___     ___ ___ ___ ___ ___ ESC 
+TAB ___ ___ ___ ___ ___     ___ ___ ___ ___ ___ ESC 
 CTL ___ ___ ___ ___ ___     ___ ___ ___ ___ ___ ENT
 SFT ___ ___ ___ ___ ___     ___ ___ ___ ___ ___ F4
 xxx xxx CTL ALT SPC SYM     NAV NUM BSP F1  F2  xxx
