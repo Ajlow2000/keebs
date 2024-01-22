@@ -61,24 +61,24 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_SYM] = LAYOUT_preonic_grid(
         KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,
-        _______, KC_BSLS, KC_QUOT, KC_DQUO, KC_PERC, KC_QUES, KC_EXLM, KC_RBRC, KC_LBRC, KC_GRV,  KC_COLN, _______,
-        _______, KC_CIRC, KC_EQL,  KC_UNDS, KC_DLR,  KC_ASTR, KC_AT,   KC_RPRN, KC_LPRN, KC_TILD, KC_SCLN, _______,
-        _______, KC_LT,   KC_PIPE, KC_MINS, KC_GT,   KC_SLSH, KC_PLUS, KC_RCBR, KC_LCBR, KC_HASH, KC_DOT,  _______,
+        _______, KC_BSLS, KC_QUOT, KC_DQUO, KC_PERC, KC_QUES, KC_EXLM, KC_RBRC, KC_LBRC, KC_GRV,  KC_SCLN, _______,
+        _______, KC_CIRC, KC_EQL,  KC_UNDS, KC_DLR,  KC_ASTR, KC_AT,   KC_RCBR, KC_LCBR, KC_TILD, KC_COLN, _______,
+        _______, KC_LT,   KC_PIPE, KC_MINS, KC_GT,   KC_SLSH, KC_PLUS, KC_RPRN, KC_LPRN, KC_HASH, KC_AMPR, _______,
         XXXXXXX, _______, _______, _______, _______, TG(_SYM), _______, _______, _______, _______, _______, XXXXXXX
     ),
 
     [_NAV] = LAYOUT_preonic_grid(
         _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______,
-        QK_BOOT, XXXXXXX, XXXXXXX, KC_MS_U, XXXXXXX, XXXXXXX, KC_MUTE, KC_VOLD, KC_VOLU, XXXXXXX, XXXXXXX, G(KC_L),
-        _______, DF_Q,    KC_MS_L, KC_MS_D, KC_MS_R, XXXXXXX, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, XXXXXXX, _______,
-        _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, GAME,    XXXXXXX, KC_BRID, KC_BRIU, XXXXXXX, XXXXXXX, _______,
+        _______, QK_BOOT, XXXXXXX, KC_MS_U, XXXXXXX, XXXXXXX, KC_MUTE, KC_VOLD, KC_VOLU, XXXXXXX, QK_BOOT, _______,
+        _______, DF_Q,    KC_MS_L, KC_MS_D, KC_MS_R, GAME,    KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, G(KC_L), _______,
+        _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_BRID, KC_BRIU, XXXXXXX, XXXXXXX, _______,
         XXXXXXX, _______, _______, _______, KC_BTN1, KC_BTN2, TG(_NAV),_______, _______, _______, _______, XXXXXXX
     ),
 
     [_NUM] = LAYOUT_preonic_grid(
         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-        _______, KC_F1,   KC_F4,   KC_F7,   KC_F10,  XXXXXXX, KC_SLSH, KC_7,    KC_8,    KC_9,    XXXXXXX, _______,
-        _______, KC_F2,   KC_F5,   KC_F8,   KC_F11,  XXXXXXX, KC_COLN, KC_4,    KC_5,    KC_6,    XXXXXXX, _______,
+        _______, KC_F1,   KC_F4,   KC_F7,   KC_F10,  XXXXXXX, KC_SLSH, KC_7,    KC_8,    KC_9,    KC_MINS, _______,
+        _______, KC_F2,   KC_F5,   KC_F8,   KC_F11,  XXXXXXX, KC_COLN, KC_4,    KC_5,    KC_6,    KC_PLUS, _______,
         _______, KC_F3,   KC_F6,   KC_F9,   KC_F12,  XXXXXXX, KC_DOT,  KC_1,    KC_2,    KC_3,    KC_0,    _______,
         XXXXXXX, _______, _______, _______, _______, TG(_NUM),TG(_NUM),_______, _______, _______, _______, XXXXXXX
     ),
