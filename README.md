@@ -43,7 +43,7 @@ ___ xxx xxx xxx xxx xxx     xxx xxx xxx xxx xxx ___
 CV  ___ ___ ___ ___ ___                    ___ ___ ___ ___ ___ LCK
 TAB ___ ___ ___ ___ ___                    ___ ___ ___ ___ ___ TAB
 ESC ___ ___ ___ ___ ___                    ___ ___ ___ ___ ___ ENT
-SFT ___ ___ ___ ___ ___ CTL F5     F11 C+S ___ ___ ___ ___ ___ SFT
+SFT ___ ___ ___ ___ ___ C+S F5     F11 DEL ___ ___ ___ ___ ___ SFT
             ROT ALT SPC SYM WIN    TAB NAV NUM BSP ROT
 ```
 
