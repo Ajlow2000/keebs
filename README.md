@@ -23,8 +23,8 @@ F1  F2  F3  F4  F5  F6      F7  F8  F9  F10 F11 F12
 #### Navigation
 ```
 ___ xxx xxx xxx xxx xxx     xxx xxx xxx xxx xxx ___
-BTL xxx xxx MSU xxx xxx     MUT VLD VLU xxx xxx LCK
-    QWE MSL MSD MSR GAM     ←   ↓   ↑   →   xxx
+    BTL xxx MSU xxx xxx     MUT VLD VLU xxx BTL 
+    QWE MSL MSD MSR GAM     ←   ↓   ↑   →   LCK
     BT0 BT1 BT2 BT3 BT4     BTC BRD BRU xxx xxx
 ```
 
