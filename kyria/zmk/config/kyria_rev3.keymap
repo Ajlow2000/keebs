@@ -40,13 +40,13 @@
 
         default_layer {
             bindings = <
-            &kp TAB       &kp Q &kp W &kp E &kp R &kp T                                                           &kp Y &kp U  &kp I     &kp O   &kp P    &kp TAB
-            &mt LCTRL ESC &kp A &kp S &kp D &kp F &kp G                                                           &kp H &kp J  &kp K     &kp L   &kp SEMI &mt RCTRL ENTER
-            &kp LSHFT     &kp Z &kp X &kp C &kp V &kp B &kp LC(LSHFT) &kp F5                    &kp F11 &kp DEL   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-                                  &kp C_MUTE &kp LALT &kp SPACE &mo SYM &kp LGUI            &kp TAB &mo NAV &lt NUM SPACE &kp BSPC &none
+            &kp TAB       &kp Q &kp W &kp E &kp R &kp T                                             &kp Y &kp U  &kp I     &kp O   &kp P    &kp TAB
+            &mt LCTRL ESC &kp A &kp S &kp D &kp F &kp G                                             &kp H &kp J  &kp K     &kp L   &kp SEMI &mt RCTRL ENTER
+            &kp LSHFT     &kp Z &kp X &kp C &kp V &kp B &kp LC(LSHFT) &kp F5        &kp F11 &kp DEL &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
+                                &kp C_MUTE &kp LALT &kp SPACE &mo SYM &kp LGUI      &kp TAB &mo NAV &lt NUM SPACE &kp BSPC &none
             >;
 
-           sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+           sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         symbols_layer {
@@ -54,7 +54,7 @@
             &trans &kp BSLH  &kp SQT   &kp DQT   &kp PRCNT  &kp QMARK                                &kp EXCL &kp RBKT &kp LBKT &kp GRAVE &kp SEMI  &trans
             &trans &kp CARET &kp EQUAL &kp UNDER &kp DOLLAR &kp ASTRK                                &kp AT   &kp RBRC &kp LBRC &kp TILDE &kp COLON &trans
             &trans &kp LT    &kp PIPE  &kp MINUS &kp GT     &kp FSLH  &trans &trans    &trans &trans &kp PLUS &kp RPAR &kp LPAR &kp HASH  &kp AMPS  &trans
-                                       &trans    &trans     &trans    &trans &trans    &trans &trans &trans &trans &trans
+                                       &trans    &trans     &trans    &trans &trans    &trans &trans &trans &kp DEL &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -65,18 +65,18 @@
             &trans &bootloader  &none        &none        &none        &none                                           &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &none     &bootloader &none
             &trans &none        &none        &none        &none        &tog GAM                                        &kp LEFT   &kp DOWN     &kp UP       &kp RIGHT &kp LG(L)   &trans
             &trans &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &trans &trans        &trans &trans &bt BT_CLR &kp C_BRI_DN &kp C_BRI_UP &none     &none       &trans
-                                                               &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans
+                                                               &trans &trans &trans &trans &trans        &trans &trans &trans &kp DEL &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         numbers_layer {
             bindings = <
-            &trans &kp F1 &kp F4 &kp F7 &kp F10 &none                                     &kp FSLH &kp N7 &kp N8 &kp N9 &kp MINUS &trans
-            &trans &kp F2 &kp F5 &kp F8 &kp F11 &none                                     &kp SEMI &kp N4 &kp N5 &kp N6 &kp PLUS  &trans
-            &trans &kp F3 &kp F6 &kp F9 &kp F12 &none &trans &trans         &trans &trans &kp DOT  &kp N1 &kp N2 &kp N3 &kp N0     &trans
-                                 &trans &trans &trans &trans &trans         &trans &trans &trans &trans &trans
+            &trans &kp F1 &kp F4 &kp F7 &kp F10 &kp F13                                     &kp FSLH &kp N7 &kp N8 &kp N9 &kp MINUS &trans
+            &trans &kp F2 &kp F5 &kp F8 &kp F11 &kp F14                                     &kp SEMI &kp N4 &kp N5 &kp N6 &kp PLUS  &trans
+            &trans &kp F3 &kp F6 &kp F9 &kp F12 &kp F15 &trans &trans         &trans &trans &kp DOT  &kp N1 &kp N2 &kp N3 &kp N0    &trans
+                                   &trans &trans &trans &trans &trans         &trans &trans &trans &trans &trans
             >;
 
            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
