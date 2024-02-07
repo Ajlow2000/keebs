@@ -31,9 +31,9 @@ ___ xxx xxx xxx xxx xxx     xxx xxx xxx xxx xxx ___
 #### Numbers
 ```
 ___ xxx xxx xxx xxx xxx     xxx xxx xxx xxx xxx ___
-    F1  F4  F7  F10 xxx     /   7   8   9   -
-    F2  F5  F8  F11 xxx     :   4   5   6   +
-    F3  F6  F9  F12 xxx     .   1   2   3   0
+    F1  F4  F7  F10 F13     /   7   8   9   -
+    F2  F5  F8  F11 F14     :   4   5   6   +
+    F3  F6  F9  F12 F15     .   1   2   3   0
 ```
 
 ### Overlays
