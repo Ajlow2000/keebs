@@ -69,7 +69,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, KC_BSLS, KC_QUOT, KC_DQUO, KC_PERC, KC_QUES,          XXXXXXX, XXXXXXX,          KC_EXLM, KC_RBRC, KC_LBRC, KC_GRV,  KC_SCLN, _______,
         _______, KC_CIRC, KC_EQL,  KC_UNDS, KC_DLR,  KC_ASTR,          XXXXXXX, XXXXXXX,          KC_AT,   KC_RCBR, KC_LCBR, KC_TILD, KC_COLN, _______,
         _______, KC_LT,   KC_PIPE, KC_MINS, KC_GT,   KC_SLSH, _______, _______, _______, _______, KC_PLUS, KC_RPRN, KC_LPRN, KC_HASH, KC_DOT,  _______,
-                                   XXXXXXX, _______, _______, TG(_SYM),_______, _______, _______, _______, _______, XXXXXXX,
+                                   XXXXXXX, _______, _______, TG(_SYM),_______, _______, _______, _______, KC_DEL,  XXXXXXX,
 
         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,          XXXXXXX,                             XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,    XXXXXXX
     ),
@@ -79,17 +79,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, QK_BOOT, XXXXXXX, KC_MS_U, XXXXXXX, XXXXXXX,          XXXXXXX, XXXXXXX,           KC_MUTE, KC_VOLD, KC_VOLU, XXXXXXX, QK_BOOT, _______,
         _______, DF_Q,    KC_MS_L, KC_MS_D, KC_MS_R, GAME,             XXXXXXX, XXXXXXX,           KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, G(KC_L), _______,
         _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______, _______, _______, _______,  XXXXXXX, KC_BRID, KC_BRIU, XXXXXXX, XXXXXXX, _______,
-                                   XXXXXXX, _______, KC_BTN1, KC_BTN2, _______, _______, TG(_NAV), _______, _______, XXXXXXX,
+                                   XXXXXXX, _______, KC_BTN1, KC_BTN2, _______, _______, TG(_NAV), _______, KC_DEL,  XXXXXXX,
 
         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,          XXXXXXX,                             XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,    XXXXXXX
     ),
 
     [_NUM] = LAYOUT_myr(
-        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,          XXXXXXX,  XXXXXXX,           XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-        _______, KC_F1,   KC_F4,   KC_F7,   KC_F10,  XXXXXXX,          XXXXXXX,  XXXXXXX,           KC_SLSH, KC_7,    KC_8,    KC_9,    XXXXXXX, _______,
-        _______, KC_F2,   KC_F5,   KC_F8,   KC_F11,  XXXXXXX,          XXXXXXX,  XXXXXXX,           KC_COLN, KC_4,    KC_5,    KC_6,    XXXXXXX, _______,
-        _______, KC_F3,   KC_F6,   KC_F9,   KC_F12,  XXXXXXX, _______, _______,  _______, _______,  KC_DOT,  KC_1,    KC_2,    KC_3,    KC_0,    _______,
-                                   XXXXXXX, _______, _______, TG(_NUM),_______,  _______, TG(_NUM), _______, _______, XXXXXXX,
+        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,          XXXXXXX, XXXXXXX,           XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+        _______, KC_F1,   KC_F4,   KC_F7,   KC_F10,  KC_F13,           XXXXXXX, XXXXXXX,           KC_SLSH, KC_7,    KC_8,    KC_9,    KC_MINS, _______,
+        _______, KC_F2,   KC_F5,   KC_F8,   KC_F11,  KC_F14,           XXXXXXX, XXXXXXX,           KC_COLN, KC_4,    KC_5,    KC_6,    KC_PLUS, _______,
+        _______, KC_F3,   KC_F6,   KC_F9,   KC_F12,  KC_F15,  _______, _______, _______, _______,  KC_DOT,  KC_1,    KC_2,    KC_3,    KC_0,    _______,
+                                   XXXXXXX, _______, _______, TG(_NUM),_______, _______, TG(_NUM), _______, _______, XXXXXXX,
 
         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,          XXXXXXX,                              XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,    XXXXXXX
     ),
@@ -148,16 +148,6 @@ bool oled_task_user(void) {
 #endif
 */
 
-#if defined(ENCODER_MAP_ENABLE)
-const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
-    [_QWERTY]       = { ENCODER_CCW_CW(KC_VOLD,      KC_VOLU),          ENCODER_CCW_CW(KC_BRID,      KC_BRIU) },
-    [_NAV]          = { ENCODER_CCW_CW(KC_MS_L,      KC_MS_R),          ENCODER_CCW_CW(KC_MS_D,      KC_MS_U) },
-    [_SYM]          = { ENCODER_CCW_CW(G(S(KC_TAB)), G(KC_TAB)),        ENCODER_CCW_CW(A(S(KC_TAB)), A(KC_TAB)) },
-    [_NUM]          = { ENCODER_CCW_CW(C(KC_MINS),   C(KC_PLUS)),       ENCODER_CCW_CW(XXXXXXX,      XXXXXXX) },
-    [_GAME_OVERLAY] = { ENCODER_CCW_CW(KC_VOLD,      KC_VOLU),          ENCODER_CCW_CW(KC_BRID,      KC_BRIU) },
-    // [_RECURVA]      = { ENCODER_CCW_CW(KC_VOLD,      KC_VOLU),          ENCODER_CCW_CW(KC_BRID,      KC_BRIU) },
-};
-#endif
 
 // #ifdef ENCODER_ENABLE
 // bool encoder_update_user(uint8_t index, bool clockwise) {

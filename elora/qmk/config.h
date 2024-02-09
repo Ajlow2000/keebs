@@ -1,34 +1,14 @@
-/* Copyright 2023 splitkb.com <support@splitkb.com>
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
-
 #pragma once
 
 // Myriad boilerplate
 #define MYRIAD_ENABLE
 
-// Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed
 #define DEBOUNCE 5
 
 #define TAPPING_TOGGLE 2
 #define TAPPING_TERM 200
 #define TAPPING_TERM_PER_KEY
 
-#define RGBLIGHT_DEFAULT_ON false
-
-// Mouse key speed and acceleration.
 #undef MOUSEKEY_DELAY
 #define MOUSEKEY_DELAY          0
 #undef MOUSEKEY_INTERVAL
@@ -39,13 +19,6 @@
 #define MOUSEKEY_MAX_SPEED      6
 #undef MOUSEKEY_TIME_TO_MAX
 #define MOUSEKEY_TIME_TO_MAX    64
-
-// Encoders
-// #define ENCODERS_PAD_A { B12 }
-// #define ENCODERS_PAD_B { B13 }
-
-// #define ENCODER_RESOLUTION 1
-//#define ENCODER_RESOLUTIONS { 4, 2 }   // defined per encoder
 
 #define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
 #define CAPS_WORD_INVERT_ON_SHIFT
