@@ -149,8 +149,60 @@ bool oled_task_user(void) {
 */
 
 
-// #ifdef ENCODER_ENABLE
-// bool encoder_update_user(uint8_t index, bool clockwise) {
-//   // Your code goes here
-// }
-// #endif
+#ifdef ENCODER_ENABLE
+bool encoder_update_user(uint8_t index, bool clockwise) {
+    // Left side
+    if (index == 0 || index == 1 || index == 2) {
+        if (clockwise) {
+            tap_code(KC_VOLU);
+        } else {
+            tap_code(KC_VOLD);
+        }
+        // Right side
+    } else if (index == 4 || index == 5 || index == 6) {
+        if (clockwise) {
+            tap_code(KC_BRIU);
+        } else {
+            tap_code(KC_BRID);
+        }
+        // Myriad
+    } else if (index == 3 || index == 7) {
+        if (clockwise) {
+            tap_code(KC_VOLU);
+        } else {
+            tap_code(KC_VOLD);
+        }
+    }
+
+    // if (IS_LAYER_ON(_GAME_OVERLAY)) {
+    // } else if (IS_LAYER_ON(_SYM)) {
+    // } else if (IS_LAYER_ON(_NAV)) {
+    // } else if (IS_LAYER_ON(_NUM)) {
+    // } else { // ALPHA Layers
+    //     // Left side
+    //     if (index == 0 || index == 1 || index == 2) {
+    //         if (clockwise) {
+    //             tap_code(KC_VOLU);
+    //         } else {
+    //             tap_code(KC_VOLD);
+    //         }
+    //     // Right side
+    //     } else if (index == 4 || index == 5 || index == 6) {
+    //         if (clockwise) {
+    //             tap_code(KC_PGUP);
+    //         } else {
+    //             tap_code(KC_PGDN);
+    //         }
+    //     // Myriad
+    //     } else if (index == 3 || index == 7) {
+    //         if (clockwise) {
+    //             tap_code(KC_VOLU);
+    //         } else {
+    //             tap_code(KC_VOLD);
+    //         }
+    //     }
+    //}
+
+    return true;
+}
+#endif
