@@ -86,5 +86,6 @@ xxx xxx CTL ALT SPC SYM     NAV NUM BSP F1  F2  xxx
 # References
 
 ## Layout References
-[The Keyboard Layout Bible](https://docs.google.com/document/d/1Ic-h8UxGe5-Q0bPuYNgE3NoWiI8ekeadvSQ5YysrwII/edit?tab=t.0)
-[Which Alt Keyboard Layout Should I Learn](https://getreuer.info/posts/keyboards/alt-layouts/index.html#which-alt-keyboard-layout-should-i-learn)
+* [The Keyboard Layout Bible](https://docs.google.com/document/d/1Ic-h8UxGe5-Q0bPuYNgE3NoWiI8ekeadvSQ5YysrwII/edit?tab=t.0)
+
+* [Which Alt Keyboard Layout Should I Learn](https://getreuer.info/posts/keyboards/alt-layouts/index.html#which-alt-keyboard-layout-should-i-learn)
