@@ -12,7 +12,7 @@ CV  1   2   3   4   5       6   7   8   9   0   LCK
     Z   X   C   V   B       N   M   ,   .   /
 ```
 
-#### Graphite
+#### [Graphite](https://github.com/rdavison/graphite-layout)
 ```
 CV  1   2   3   4   5       6   7   8   9   0   LCK
     B   L   D   W   Z       '   F   O   U   J
