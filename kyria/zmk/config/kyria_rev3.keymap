@@ -29,10 +29,11 @@
 };
 
 #define QWE 0
-#define SYM 1
-#define NAV 2
-#define NUM 3
-#define GAM 4
+#define GRA 1
+#define SYM 2
+#define NAV 3
+#define NUM 4
+#define GAM 5
 
 / {
     keymap {
@@ -43,6 +44,17 @@
             &kp TAB       &kp Q &kp W &kp E &kp R &kp T                                             &kp Y &kp U  &kp I     &kp O   &kp P    &kp TAB
             &mt LCTRL ESC &kp A &kp S &kp D &kp F &kp G                                             &kp H &kp J  &kp K     &kp L   &kp SEMI &mt RCTRL ENTER
             &kp LSHFT     &kp Z &kp X &kp C &kp V &kp B &kp LC(LSHFT) &kp F5        &kp F11 &kp DEL &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
+                                &kp C_MUTE &kp LALT &kp SPACE &mo SYM &kp LGUI      &kp TAB &mo NAV &lt NUM SPACE &kp BSPC &none
+            >;
+
+           sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
+        };
+
+        graphite_layer {
+            bindings = <
+            &kp TAB       &kp B &kp L &kp D &kp W &kp Z                                             &kp SQT &kp F &kp O   &kp U     &kp J     &kp TAB
+            &mt LCTRL ESC &kp N &kp R &kp T &kp S &kp G                                             &kp Y   &kp H &kp A   &kp E     &kp I     &mt RCTRL ENTER
+            &kp LSHFT     &kp Q &kp X &kp M &kp C &kp V &kp LC(LSHFT) &kp F5        &kp F11 &kp DEL &kp K   &kp P &kp DOT &kp MINUS &kp COMMA &mt RSHFT FSLH
                                 &kp C_MUTE &kp LALT &kp SPACE &mo SYM &kp LGUI      &kp TAB &mo NAV &lt NUM SPACE &kp BSPC &none
             >;
 
@@ -62,7 +74,7 @@
 
         navigation_layer {
             bindings = <
-            &trans &bootloader  &none        &none        &none        &none                                           &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &none     &bootloader &none
+            &trans &bootloader  &none        &none        &none        &tog GRA                                        &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &none     &bootloader &none
             &trans &none        &none        &none        &none        &tog GAM                                        &kp LEFT   &kp DOWN     &kp UP       &kp RIGHT &kp LG(L)   &trans
             &trans &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &trans &trans        &trans &trans &bt BT_CLR &kp C_BRI_DN &kp C_BRI_UP &none     &none       &trans
                                                                &trans &trans &trans &trans &trans        &trans &trans &trans &kp DEL &trans
