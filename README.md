@@ -12,6 +12,14 @@ CV  1   2   3   4   5       6   7   8   9   0   LCK
     Z   X   C   V   B       N   M   ,   .   /
 ```
 
+#### Graphite
+```
+CV  1   2   3   4   5       6   7   8   9   0   LCK
+    B   L   D   W   Z       '   F   O   U   J
+    N   R   T   S   G       Y   H   A   E   I
+    Q   X   M   C   V       K   P   .   -   /
+```
+
 #### Symbols
 ```
 F1  F2  F3  F4  F5  F6      F7  F8  F9  F10 F11 F12
@@ -23,7 +31,7 @@ F1  F2  F3  F4  F5  F6      F7  F8  F9  F10 F11 F12
 #### Navigation
 ```
 ___ xxx xxx xxx xxx xxx     xxx xxx xxx xxx xxx ___
-    BTL xxx MSU xxx xxx     MUT VLD VLU xxx BTL 
+    BTL xxx MSU xxx GRA     MUT VLD VLU xxx BTL 
     QWE MSL MSD MSR GAM     ←   ↓   ↑   →   LCK
     BT0 BT1 BT2 BT3 BT4     BTC BRD BRU xxx xxx
 ```
