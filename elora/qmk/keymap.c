@@ -22,7 +22,7 @@ enum layers {
     _NAV,
     _NUM,
     _GAME_OVERLAY,
-    _RECURVA,
+    _GRAPHITE,
 };
 
 enum tap_dances {
@@ -40,11 +40,11 @@ tap_dance_action_t tap_dance_actions[] = {
 #define CTL_ESC MT(MOD_LCTL, KC_ESC)
 #define CTL_ENT MT(MOD_RCTL, KC_ENT)
 #define ALT_ENT  MT(MOD_LALT, KC_ENT)
-#define SFT_DEL  MT(MOD_LSFT, KC_DEL)
+#define SFT_SLH  MT(MOD_RSFT, KC_SLSH)
 
 /* Layer stuff */
 #define DF_Q DF(_QWERTY)
-#define DF_R DF(_RECURVA)
+#define DF_G DF(_GRAPHITE)
 #define L_SYM TT(_SYM)
 #define L_NAV TT(_NAV)
 #define NUM_SPC LT(_NUM, KC_SPC)
@@ -58,7 +58,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         TD_CV,   KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                XXXXXXX, XXXXXXX,          KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    G(KC_L),
         KC_TAB , KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                XXXXXXX, XXXXXXX,          KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_TAB,
         CTL_ESC, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,                XXXXXXX, XXXXXXX,          KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, CTL_ENT,
-        KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    C(KC_LSFT), KC_F5,   KC_F11,  KC_DEL,  KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSFT,
+        KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    C(KC_LSFT), KC_F5,   KC_F11,  KC_DEL,  KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, SFT_SLH,
+                                   XXXXXXX, ALT_ENT, KC_SPC,  L_SYM,      KC_LGUI, KC_TAB,  L_NAV,   NUM_SPC, KC_BSPC, XXXXXXX,
+
+        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,          XXXXXXX,                            XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,    XXXXXXX
+    ),
+
+    [_GRAPHITE] = LAYOUT_myr(
+        TD_CV,   KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                XXXXXXX, XXXXXXX,          KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    G(KC_L),
+        KC_TAB , KC_B,    KC_L,    KC_D,    KC_W,    KC_Z,                XXXXXXX, XXXXXXX,          KC_QUOT, KC_F,    KC_O,    KC_U,    KC_J,    KC_TAB,
+        CTL_ESC, KC_N,    KC_R,    KC_T,    KC_S,    KC_G,                XXXXXXX, XXXXXXX,          KC_Y,    KC_H,    KC_A,    KC_E,    KC_I,    CTL_ENT,
+        KC_LSFT, KC_Q,    KC_X,    KC_M,    KC_C,    KC_V,    C(KC_LSFT), KC_F5,   KC_F11,  KC_DEL,  KC_K,    KC_P,    KC_DOT,  KC_MINS, KC_COMM, SFT_SLH,
                                    XXXXXXX, ALT_ENT, KC_SPC,  L_SYM,      KC_LGUI, KC_TAB,  L_NAV,   NUM_SPC, KC_BSPC, XXXXXXX,
 
         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,          XXXXXXX,                            XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,    XXXXXXX
@@ -76,7 +86,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_NAV] = LAYOUT_myr(
         _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,          XXXXXXX, XXXXXXX,           XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______,
-        _______, QK_BOOT, XXXXXXX, KC_MS_U, XXXXXXX, XXXXXXX,          XXXXXXX, XXXXXXX,           KC_MUTE, KC_VOLD, KC_VOLU, XXXXXXX, QK_BOOT, _______,
+        _______, QK_BOOT, XXXXXXX, KC_MS_U, XXXXXXX, DF_G,             XXXXXXX, XXXXXXX,           KC_MUTE, KC_VOLD, KC_VOLU, XXXXXXX, QK_BOOT, _______,
         _______, DF_Q,    KC_MS_L, KC_MS_D, KC_MS_R, GAME,             XXXXXXX, XXXXXXX,           KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, G(KC_L), _______,
         _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______, _______, _______, _______,  XXXXXXX, KC_BRID, KC_BRIU, XXXXXXX, XXXXXXX, _______,
                                    XXXXXXX, _______, KC_BTN1, KC_BTN2, _______, _______, TG(_NAV), _______, KC_DEL,  XXXXXXX,
