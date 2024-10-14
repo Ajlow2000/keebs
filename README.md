@@ -17,7 +17,7 @@ CV  1   2   3   4   5       6   7   8   9   0   LCK
 CV  1   2   3   4   5       6   7   8   9   0   LCK
     B   L   D   W   Z       '   F   O   U   J
     N   R   T   S   G       Y   H   A   E   I
-    Q   X   M   C   V       K   P   .   -   /
+    Q   X   M   C   V       K   P   .   -   ,
 ```
 
 #### Symbols
