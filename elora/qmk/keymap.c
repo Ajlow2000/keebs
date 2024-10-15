@@ -76,10 +76,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_SYM] = LAYOUT_myr(
         KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,            XXXXXXX, XXXXXXX,          KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,
-        _______, KC_BSLS, KC_QUOT, KC_DQUO, KC_PERC, KC_QUES,          XXXXXXX, XXXXXXX,          KC_EXLM, KC_RBRC, KC_LBRC, KC_GRV,  KC_SCLN, _______,
-        _______, KC_CIRC, KC_EQL,  KC_UNDS, KC_DLR,  KC_ASTR,          XXXXXXX, XXXXXXX,          KC_AT,   KC_RCBR, KC_LCBR, KC_TILD, KC_COLN, _______,
+        _______, KC_BSLS, KC_QUOT, KC_DQUO, KC_PERC, KC_QUES,          XXXXXXX, XXXXXXX,          KC_EXLM, KC_RBRC, KC_LBRC, KC_GRV,  KC_COLN, _______,
+        _______, KC_CIRC, KC_EQL,  KC_UNDS, KC_DLR,  KC_ASTR,          XXXXXXX, XXXXXXX,          KC_AT,   KC_RCBR, KC_LCBR, KC_TILD, KC_SCLN, _______,
         _______, KC_LT,   KC_PIPE, KC_MINS, KC_GT,   KC_SLSH, _______, _______, _______, _______, KC_PLUS, KC_RPRN, KC_LPRN, KC_HASH, KC_DOT,  _______,
-                                   XXXXXXX, _______, _______, TG(_SYM),_______, _______, _______, _______, KC_DEL,  XXXXXXX,
+                                   XXXXXXX, _______, _______, TG(_SYM),_______, KC_COMM, KC_DOT,  _______, KC_DEL,  XXXXXXX,
 
         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,          XXXXXXX,                             XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,    XXXXXXX
     ),
