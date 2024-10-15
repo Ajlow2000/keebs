@@ -43,7 +43,7 @@
             bindings = <
             &kp TAB       &kp Q &kp W &kp E &kp R &kp T                                             &kp Y &kp U  &kp I     &kp O   &kp P    &kp TAB
             &mt LCTRL ESC &kp A &kp S &kp D &kp F &kp G                                             &kp H &kp J  &kp K     &kp L   &kp SEMI &mt RCTRL ENTER
-            &kp LSHFT     &kp Z &kp X &kp C &kp V &kp B &kp LC(LSHFT) &kp F5        &kp F11 &kp DEL &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
+            &kp LSHFT     &kp Z &kp X &kp C &kp V &kp B &kp LC(LSHFT) &kp F5        &kp F11 &kp DEL &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &mt RSHFT FSLH
                                 &kp C_MUTE &kp LALT &kp SPACE &mo SYM &kp LGUI      &kp TAB &mo NAV &lt NUM SPACE &kp BSPC &none
             >;
 
@@ -63,10 +63,10 @@
 
         symbols_layer {
             bindings = <
-            &trans &kp BSLH  &kp SQT   &kp DQT   &kp PRCNT  &kp QMARK                                &kp EXCL &kp RBKT &kp LBKT &kp GRAVE &kp SEMI  &trans
-            &trans &kp CARET &kp EQUAL &kp UNDER &kp DOLLAR &kp ASTRK                                &kp AT   &kp RBRC &kp LBRC &kp TILDE &kp COLON &trans
-            &trans &kp LT    &kp PIPE  &kp MINUS &kp GT     &kp FSLH  &trans &trans    &trans &trans &kp PLUS &kp RPAR &kp LPAR &kp HASH  &kp AMPS  &trans
-                                       &trans    &trans     &trans    &trans &trans    &trans &trans &trans &kp DEL &trans
+            &trans &kp BSLH  &kp SQT   &kp DQT   &kp PRCNT  &kp QMARK                                    &kp EXCL &kp RBKT &kp LBKT &kp GRAVE &kp COLON &trans
+            &trans &kp CARET &kp EQUAL &kp UNDER &kp DOLLAR &kp ASTRK                                    &kp AT   &kp RBRC &kp LBRC &kp TILDE &kp SEMI  &trans
+            &trans &kp LT    &kp PIPE  &kp MINUS &kp GT     &kp FSLH  &trans &trans    &trans    &trans  &kp PLUS &kp RPAR &kp LPAR &kp HASH  &kp AMPS  &trans
+                                       &trans    &trans     &trans    &trans &trans    &kp COMMA &kp DOT &trans &kp DEL &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
