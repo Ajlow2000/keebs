@@ -52,8 +52,8 @@ ___ F3  F6  F9  F12 F15 ___ ___    ___ ___ .   1   2   3   0   ___
 ```
 ESC 1   2   3   4   5                      6   7   8   9   0   BSP
 TAB T   Q   W   E   R                      Y   U   I   O   P   ESC
-CTL G   A   S   D   F                      H   J   K   L   ;   ENT
-SFT Z   X   C   V   B   ALT F1     F2  F3  N   M   ,   .   /   ENT
+G   SFT A   S   D   F                      H   J   K   L   ;   ENT
+CTL Z   X   C   V   B   ALT F1     F2  F3  N   M   ,   .   /   ENT
             ROT CTL SPC SYM WIN    F4  NAV NUM BSP ROT
 ```
 
