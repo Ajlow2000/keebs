@@ -18,11 +18,11 @@
 
 enum layers {
     _QWERTY,
+    _GRAPHITE,
+    _GAME,
     _SYM,
     _NAV,
     _NUM,
-    _GAME_OVERLAY,
-    _GRAPHITE,
 };
 
 enum tap_dances {
@@ -48,7 +48,7 @@ tap_dance_action_t tap_dance_actions[] = {
 #define L_SYM TT(_SYM)
 #define L_NAV TT(_NAV)
 #define NUM_SPC LT(_NUM, KC_SPC)
-#define GAME TG(_GAME_OVERLAY)
+#define GAME TG(_GAME)
 
 const key_override_t delete_key_override = ko_make_basic(MOD_MASK_SHIFT, KC_BSPC, KC_DEL);
 
@@ -72,6 +72,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                    XXXXXXX, ALT_ENT, KC_SPC,  L_SYM,      KC_LGUI, KC_TAB,  L_NAV,   NUM_SPC, KC_BSPC, XXXXXXX,
 
         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,          XXXXXXX,                            XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,    XXXXXXX
+    ),
+
+    [_GAME] = LAYOUT_myr(
+        KC_ESC,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,             XXXXXXX, XXXXXXX,         KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_BSPC,
+        KC_TAB,  KC_T,    KC_Q,    KC_W,    KC_E,    KC_R,             XXXXXXX, XXXXXXX,         KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_ESC,
+        KC_LCTL, KC_G,    KC_A,    KC_S,    KC_D,    KC_F,             XXXXXXX, XXXXXXX,         KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_ENT,
+        KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_LALT, KC_F1,   KC_F2,   KC_F3,  KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_ENT,
+                                   XXXXXXX, KC_LCTL, KC_SPC,  L_SYM,   KC_LGUI, KC_F4,   L_NAV,  NUM_SPC, KC_BSPC, XXXXXXX,
+
+        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,          XXXXXXX,                              XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,    XXXXXXX
     ),
 
     [_SYM] = LAYOUT_myr(
@@ -100,16 +110,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, KC_F2,   KC_F5,   KC_F8,   KC_F11,  KC_F14,           XXXXXXX, XXXXXXX,           KC_COLN, KC_4,    KC_5,    KC_6,    KC_PLUS, _______,
         _______, KC_F3,   KC_F6,   KC_F9,   KC_F12,  KC_F15,  _______, _______, _______, _______,  KC_DOT,  KC_1,    KC_2,    KC_3,    KC_0,    _______,
                                    XXXXXXX, _______, _______, TG(_NUM),_______, _______, TG(_NUM), _______, _______, XXXXXXX,
-
-        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,          XXXXXXX,                              XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,    XXXXXXX
-    ),
-
-    [_GAME_OVERLAY] = LAYOUT_myr(
-        KC_ESC,  _______, _______, _______, _______, _______,          XXXXXXX, XXXXXXX,          _______, _______, _______, _______, _______, KC_BSPC,
-        KC_TAB,  _______, _______, _______, _______, _______,          XXXXXXX, XXXXXXX,          _______, _______, _______, _______, _______, KC_ESC,
-        KC_LCTL, _______, _______, _______, _______, _______,          XXXXXXX, XXXXXXX,          _______, _______, _______, _______, _______, KC_ENT,
-        KC_LSFT, _______, _______, _______, _______, _______, KC_LALT, KC_F1,   KC_F2,   KC_F3,   _______, _______, _______, _______, _______, KC_ENT,
-                                   XXXXXXX, KC_LCTL, KC_SPC,  L_SYM,   KC_LGUI, KC_F4,   L_NAV,   NUM_SPC, KC_BSPC, XXXXXXX,
 
         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,          XXXXXXX,                              XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,    XXXXXXX
     ),
