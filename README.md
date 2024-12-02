@@ -4,21 +4,21 @@
 
 ### Kyria/Elora
 
-#### Qwerty
-```
-CV  1   2   3   4   5                      6   7   8   9   0  LCK
-TAB Q   W   E   R   T                      Y   U   I   O   P  TAB
-ESC A   S   D   F   G                      H   J   K   L   ;  ENT
-SFT Z   X   C   V   B   C+S F5     F11 DEL N   M   ,   .   /  SFT
-            ROT ALT SPC SYM WIN    TAB NAV NUM BSP ROT
-```
-
 #### [Graphite](https://github.com/rdavison/graphite-layout)
 ```
 CV  1   2   3   4   5                      6   7   8   9   0   LCK
 TAB B   L   D   W   Z                      '   F   O   U   J   TAB
 ESC N   R   T   S   G                      Y   H   A   E   I   ENT
 SFT Q   X   M   C   V   C+S F5     F11 DEL K   P   .   -   ,   SFT
+            ROT ALT SPC SYM WIN    TAB NAV NUM BSP ROT
+```
+
+#### Qwerty
+```
+CV  1   2   3   4   5                      6   7   8   9   0  LCK
+TAB Q   W   E   R   T                      Y   U   I   O   P  TAB
+ESC A   S   D   F   G                      H   J   K   L   ;  ENT
+SFT Z   X   C   V   B   C+S F5     F11 DEL N   M   ,   .   /  SFT
             ROT ALT SPC SYM WIN    TAB NAV NUM BSP ROT
 ```
 

@@ -1,8 +1,8 @@
 #include QMK_KEYBOARD_H
 
 enum layers {
-    _QWERTY,
     _GRAPHITE,
+    _QWERTY,
     _GAME,
     _SYM,
     _NAV,
@@ -37,20 +37,18 @@ tap_dance_action_t tap_dance_actions[] = {
 const key_override_t delete_key_override = ko_make_basic(MOD_MASK_SHIFT, KC_BSPC, KC_DEL);
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-    [_QWERTY] = LAYOUT(
-        KC_TAB , KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                                           KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_TAB,
-        CTL_ESC, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,                                           KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, CTL_ENT,
-        KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    C(KC_LSFT), KC_F5,   KC_F11,  KC_DEL,  KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, SFT_SLH,
-                                   XXXXXXX, ALT_ENT, KC_SPC,  L_SYM,      KC_LGUI, KC_TAB,  L_NAV,   NUM_SPC, KC_BSPC, XXXXXXX
-    ),
-
     [_GRAPHITE] = LAYOUT(
         KC_TAB , KC_B,    KC_L,    KC_D,    KC_W,    KC_Z,                                           KC_QUOT, KC_F,    KC_O,    KC_U,    KC_J,    KC_TAB,
         CTL_ESC, KC_N,    KC_R,    KC_T,    KC_S,    KC_G,                                           KC_Y,    KC_H,    KC_A,    KC_E,    KC_I,    CTL_ENT,
         KC_LSFT, KC_Q,    KC_X,    KC_M,    KC_C,    KC_V,    C(KC_LSFT), KC_F5,   KC_F11,  KC_DEL,  KC_K,    KC_P,    KC_DOT,  KC_MINS, KC_COMM, SFT_SLH,
                                    XXXXXXX, ALT_ENT, KC_SPC,  L_SYM,      KC_LGUI, KC_TAB,  L_NAV,   NUM_SPC, KC_BSPC, XXXXXXX
     ),
-
+    [_QWERTY] = LAYOUT(
+        KC_TAB , KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                                           KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_TAB,
+        CTL_ESC, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,                                           KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, CTL_ENT,
+        KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    C(KC_LSFT), KC_F5,   KC_F11,  KC_DEL,  KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, SFT_SLH,
+                                   XXXXXXX, ALT_ENT, KC_SPC,  L_SYM,      KC_LGUI, KC_TAB,  L_NAV,   NUM_SPC, KC_BSPC, XXXXXXX
+    ),
     [_GAME] = LAYOUT(
         KC_TAB,  KC_T,    KC_Q,    KC_W,    KC_E,    KC_R,                                       KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_ESC,
         KC_G,    KC_LSFT, KC_A,    KC_S,    KC_D,    KC_F,                                       KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_ENT,
@@ -61,7 +59,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_SYM] = LAYOUT(
         _______, KC_BSLS, KC_QUOT, KC_DQUO, KC_PERC, KC_QUES,                                     KC_EXLM, KC_RBRC, KC_LBRC, KC_GRV,  KC_COLN, _______,
         _______, KC_CIRC, KC_EQL,  KC_UNDS, KC_DLR,  KC_ASTR,                                     KC_AT,   KC_RCBR, KC_LCBR, KC_TILD, KC_SCLN, _______,
-        _______, KC_LT,   KC_PIPE, KC_MINS, KC_GT,   KC_SLSH, _______, _______, _______, _______, KC_PLUS, KC_RPRN, KC_LPRN, KC_HASH, KC_DOT,  _______,
+        _______, KC_LT,   KC_PIPE, KC_MINS, KC_GT,   KC_SLSH, _______, _______, _______, _______, KC_PLUS, KC_RPRN, KC_LPRN, KC_HASH, KC_AMPR,  _______,
                                    XXXXXXX, _______, _______, TG(_SYM),_______, KC_COMM, KC_DOT,  _______, KC_DEL,  XXXXXXX
     ),
 
