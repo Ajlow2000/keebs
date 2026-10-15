@@ -1,7 +1,7 @@
 [aliases]
 ESC = "MT(Escape,LCtrl)"
 ENT = "MT(Enter,RCtrl)"
-SPC = "LT(3,Space)"
+SPC = "LT(NUM,Space)"
 
 [layout]
 rows = 4
@@ -17,46 +17,51 @@ map = """
 layers = 5
 
 [[keymap.layer]]
+name = "BASE"
 encoders = [["AudioVolUp", "AudioVolDown"], ["MouseWheelUp", "MouseWheelDown"]]
 keys = """
 Tab    B      L      D      W      Z      No         No   Quote  F      O      U      J      Tab
 @ESC   N      R      T      S      G      No         No   Y      H      A      E      I      @ENT
 LShift Q      X      M      C      V      F5         F11  K      P      Dot    Minus  Comma  RShift
-No     MO(1)  AudioMute  MouseBtn1  LAlt  Space  LGui  Tab  @SPC   Backspace  Delete  MouseBtn2  MO(2)  No
+No     MO(SYM)  AudioMute  MouseBtn1  LAlt  Space  LGui  Tab  @SPC  Backspace  Delete  MouseBtn2  MO(NAV)  No
 """
 
 [[keymap.layer]]
+name = "SYM"
 encoders = [["_", "_"], ["_", "_"]]
 keys = """
-F1     F2     F3     F4     F5     F6     _          _    F7     F8     F9     F10    F11    F12
-_      Backslash  Quote  WM(Quote,LShift)  WM(Kc5,LShift)  WM(Slash,LShift)  _    _    WM(Kc1,LShift)  RightBracket  LeftBracket  Grave  WM(Semicolon,LShift)  _
-_      WM(Kc6,LShift)  Equal  WM(Minus,LShift)  WM(Kc4,LShift)  WM(Kc8,LShift)  _   _    WM(Kc2,LShift)  WM(RightBracket,LShift)  WM(LeftBracket,LShift)  WM(Grave,LShift)  Semicolon  _
-_      _      _      _      _      _      _          _    Comma  Dot    Space  Delete  _     _
+_      Backslash  Quote  WM(Quote,LShift)  WM(Kc5,LShift)  WM(Slash,LShift)  _   _   WM(Kc1,LShift)  RightBracket  LeftBracket  Grave  WM(Semicolon,LShift)  _
+_      WM(Kc6,LShift)  Equal  WM(Minus,LShift)  WM(Kc4,LShift)  WM(Kc8,LShift)  _   _   WM(Kc2,LShift)  WM(RightBracket,LShift)  WM(LeftBracket,LShift)  WM(Grave,LShift)  Semicolon  _
+_      WM(Comma,LShift)  WM(Backslash,LShift)  Minus  WM(Dot,LShift)  Slash  _   _   WM(Equal,LShift)  WM(Kc0,LShift)  WM(Kc9,LShift)  WM(Kc3,LShift)  WM(Kc7,LShift)  _
+_      _      _      _      _      _      _          _      _      _      _      _      _      _
 """
 
 [[keymap.layer]]
+name = "NAV"
 encoders = [["_", "_"], ["_", "_"]]
 keys = """
 _      No     No     No     No     No     _          _    No     No     No     No     No     _
+_      No     No     No     No     TG(GAME)  _       _    Left   Down   Up     Right  No     _
 _      No     No     No     No     No     _          _    No     No     No     No     No     _
-_      No     No     No     No     TG(4)  _          _    Left   Down   Up     Right  No     _
 _      _      _      _      _      _      _          _    _      _      _      _      _      _
 """
 
 [[keymap.layer]]
+name = "NUM"
 encoders = [["_", "_"], ["_", "_"]]
 keys = """
-_      No     No     No     No     No     _          _    No     No     No     No     No     _
-_      F1     F4     F7     F10    F13    _          _    Slash  Kc7    Kc8    Kc9    Minus  _
-_      F2     F5     F8     F11    F14    _          _    WM(Semicolon,LShift)  Kc4  Kc5  Kc6  WM(Equal,LShift)  _
+_      F1     F4     F7     F10    F13    _          _    Slash                 Kc7  Kc8  Kc9  Minus            _
+_      F2     F5     F8     F11    F14    _          _    WM(Semicolon,LShift)  Kc4  Kc5  Kc6  WM(Equal,LShift) _
+_      F3     F6     F9     F12    F15    _          _    Dot                   Kc1  Kc2  Kc3  Kc0              _
 _      _      _      _      _      _      _          _    _      _      _      _      _      _
 """
 
 [[keymap.layer]]
+name = "GAME"
 encoders = [["_", "_"], ["_", "_"]]
 keys = """
 Escape Kc1    Kc2    Kc3    Kc4    Kc5    _          _    Kc6    Kc7    Kc8    Kc9    Kc0    Backspace
 Tab    T      Q      W      E      R      _          _    Y      U      I      O      P      Escape
 G      LShift A      S      D      F      _          _    H      J      K      L      Semicolon  Enter
-_      MO(1)  _      _      LCtrl  Space  LGui       F4   _      _      _      _      _      _
+_      MO(SYM)  _      _      LCtrl  Space  LGui     F4   _      _      _      _      _      _
 """
