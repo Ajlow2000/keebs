@@ -1,6 +1,6 @@
 [aliases]
-ESC = "MT(Escape,LCtrl)"
-ENT = "MT(Enter,RCtrl)"
+ESC = "MT(Escape,LCtrl,mods)"
+ENT = "MT(Enter,RCtrl,mods)"
 SPC = "LT(NUM,Space)"
 
 EXLM = "WM(Kc1,LShift)"
@@ -34,6 +34,15 @@ SCLN = "Semicolon"
 GRV  = "Grave"
 LBRC = "LeftBracket"
 RBRC = "RightBracket"
+
+[behavior.morse]
+hold_timeout = "180ms"
+enable_flow_tap = true
+prior_idle_time = "150ms"
+
+[behavior.morse.profiles.mods]
+hold_on_other_press = true
+hold_timeout = "150ms"
 
 [layout]
 rows = 4
