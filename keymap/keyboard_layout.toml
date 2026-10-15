@@ -16,6 +16,7 @@ map = """
 layers = 5
 
 [[keymap.layer]]
+encoders = [["AudioVolUp", "AudioVolDown"]]
 keys = """
 Tab    B      L      D      W      Z      No         Kc7  Quote  F      O      U      J      Tab
 @ESC   N      R      T      S      G      No         Kc8  Y      H      A      E      I      @ENT
@@ -24,6 +25,7 @@ No     MO(1)  AudioMute  MouseBtn1  LAlt  Space  LGui  Kc0  Tab   MO(2)  MO(3)  
 """
 
 [[keymap.layer]]
+encoders = [["_", "_"]]
 keys = """
 F1     F2     F3     F4     F5     F6     _          _    F7     F8     F9     F10    F11    F12
 _      Backslash  Quote  WM(Quote,LShift)  WM(Kc5,LShift)  WM(Slash,LShift)  _    _    WM(Kc1,LShift)  RightBracket  LeftBracket  Grave  WM(Semicolon,LShift)  _
@@ -32,6 +34,7 @@ _      _      _      _      _      _      _          _    Comma  Dot    Space  D
 """
 
 [[keymap.layer]]
+encoders = [["_", "_"]]
 keys = """
 _      No     No     No     No     No     _          _    No     No     No     No     No     _
 _      No     No     No     No     No     _          _    No     No     No     No     No     _
@@ -40,6 +43,7 @@ _      _      _      _      _      _      _          _    _      _      _      _
 """
 
 [[keymap.layer]]
+encoders = [["_", "_"]]
 keys = """
 _      No     No     No     No     No     _          _    No     No     No     No     No     _
 _      F1     F4     F7     F10    F13    _          _    Slash  Kc7    Kc8    Kc9    Minus  _
@@ -48,6 +52,7 @@ _      _      _      _      _      _      _          _    _      _      _      _
 """
 
 [[keymap.layer]]
+encoders = [["_", "_"]]
 keys = """
 Escape Kc1    Kc2    Kc3    Kc4    Kc5    _          _    Kc6    Kc7    Kc8    Kc9    Kc0    Backspace
 Tab    T      Q      W      E      R      _          _    Y      U      I      O      P      Escape
