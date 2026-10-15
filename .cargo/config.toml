@@ -1,0 +1,11 @@
+[build]
+target = "thumbv6m-none-eabi"
+
+[target.thumbv6m-none-eabi]
+rustflags = [
+    "-C", "linker=flip-link",
+]
+runner = "probe-rs run --chip RP2040"
+
+[env]
+DEFMT_LOG = "info"

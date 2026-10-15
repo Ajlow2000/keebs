@@ -1,0 +1,16 @@
+[workspace]
+members = ["halcyon-kyria"]
+resolver = "2"
+
+[profile.release]
+opt-level = "z"
+lto = "fat"
+codegen-units = 1
+debug = false
+strip = false
+
+[profile.dev]
+opt-level = 1
+debug = true
+lto = false
+overflow-checks = true

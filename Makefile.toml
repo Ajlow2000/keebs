@@ -1,0 +1,26 @@
+[config]
+default_to_workspace = false
+
+[tasks.test]
+disabled = true
+
+[tasks.build]
+command = "cargo"
+args = ["build", "--release"]
+
+[tasks.mkdir-dist]
+script = "mkdir -p dist"
+
+[tasks.uf2-central]
+dependencies = ["build", "mkdir-dist"]
+command = "elf2uf2-rs"
+args = ["target/thumbv6m-none-eabi/release/halcyon-kyria-central", "dist/halcyon-kyria-central.uf2"]
+
+[tasks.uf2-peripheral]
+dependencies = ["build", "mkdir-dist"]
+command = "elf2uf2-rs"
+args = ["target/thumbv6m-none-eabi/release/halcyon-kyria-peripheral", "dist/halcyon-kyria-peripheral.uf2"]
+
+[tasks.uf2]
+description = "Build both UF2 firmware images into dist/"
+dependencies = ["uf2-central", "uf2-peripheral"]
