@@ -1,6 +1,7 @@
 [aliases]
 ESC = "MT(Escape,LCtrl)"
 ENT = "MT(Enter,RCtrl)"
+SPC = "LT(3,Space)"
 
 [layout]
 rows = 4
@@ -16,16 +17,16 @@ map = """
 layers = 5
 
 [[keymap.layer]]
-encoders = [["AudioVolUp", "AudioVolDown"]]
+encoders = [["AudioVolUp", "AudioVolDown"], ["MouseWheelUp", "MouseWheelDown"]]
 keys = """
-Tab    B      L      D      W      Z      No         Kc7  Quote  F      O      U      J      Tab
-@ESC   N      R      T      S      G      No         Kc8  Y      H      A      E      I      @ENT
-LShift Q      X      M      C      V      F5         Kc9  K      P      Dot    Minus  Comma  RShift
-No     MO(1)  AudioMute  MouseBtn1  LAlt  Space  LGui  Kc0  Tab   MO(2)  MO(3)  Backspace  Semicolon  Slash
+Tab    B      L      D      W      Z      No         No   Quote  F      O      U      J      Tab
+@ESC   N      R      T      S      G      No         No   Y      H      A      E      I      @ENT
+LShift Q      X      M      C      V      F5         F11  K      P      Dot    Minus  Comma  RShift
+No     MO(1)  AudioMute  MouseBtn1  LAlt  Space  LGui  Tab  @SPC   Backspace  Delete  MouseBtn2  MO(2)  No
 """
 
 [[keymap.layer]]
-encoders = [["_", "_"]]
+encoders = [["_", "_"], ["_", "_"]]
 keys = """
 F1     F2     F3     F4     F5     F6     _          _    F7     F8     F9     F10    F11    F12
 _      Backslash  Quote  WM(Quote,LShift)  WM(Kc5,LShift)  WM(Slash,LShift)  _    _    WM(Kc1,LShift)  RightBracket  LeftBracket  Grave  WM(Semicolon,LShift)  _
@@ -34,7 +35,7 @@ _      _      _      _      _      _      _          _    Comma  Dot    Space  D
 """
 
 [[keymap.layer]]
-encoders = [["_", "_"]]
+encoders = [["_", "_"], ["_", "_"]]
 keys = """
 _      No     No     No     No     No     _          _    No     No     No     No     No     _
 _      No     No     No     No     No     _          _    No     No     No     No     No     _
@@ -43,7 +44,7 @@ _      _      _      _      _      _      _          _    _      _      _      _
 """
 
 [[keymap.layer]]
-encoders = [["_", "_"]]
+encoders = [["_", "_"], ["_", "_"]]
 keys = """
 _      No     No     No     No     No     _          _    No     No     No     No     No     _
 _      F1     F4     F7     F10    F13    _          _    Slash  Kc7    Kc8    Kc9    Minus  _
@@ -52,10 +53,10 @@ _      _      _      _      _      _      _          _    _      _      _      _
 """
 
 [[keymap.layer]]
-encoders = [["_", "_"]]
+encoders = [["_", "_"], ["_", "_"]]
 keys = """
 Escape Kc1    Kc2    Kc3    Kc4    Kc5    _          _    Kc6    Kc7    Kc8    Kc9    Kc0    Backspace
 Tab    T      Q      W      E      R      _          _    Y      U      I      O      P      Escape
 G      LShift A      S      D      F      _          _    H      J      K      L      Semicolon  Enter
-_      MO(1)  _      _      LCtrl  Space  LGui       _    F4     MO(2)  MO(3)  Backspace  _   _
+_      MO(1)  _      _      LCtrl  Space  LGui       F4   _      _      _      _      _      _
 """
