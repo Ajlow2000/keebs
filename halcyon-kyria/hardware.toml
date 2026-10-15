@@ -35,6 +35,8 @@ row_pins = ["PIN_8", "PIN_11", "PIN_7", "PIN_6"]
 col_pins = ["PIN_5", "PIN_10", "PIN_9", "PIN_4", "PIN_25", "PIN_20", "PIN_19"]
 bootmagic = [0, 0]
 
+[host]
+vial_enabled = false
+
 [storage]
-clear_storage = true
-clear_layout = true
+enabled = false
