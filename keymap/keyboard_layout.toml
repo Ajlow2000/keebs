@@ -94,9 +94,9 @@ _      No     No     No     No     No     @GAM   _      No     No     No     No 
 name = "NUM"
 encoders = [["_", "_"], ["_", "_"]]
 keys = """
-_      No     No     No     No     No     @DNE   @DNE   No     No     No     No     No     _
 _      F1     F4     F7     F10    F13    @DNE   @DNE   @SLSH  Kc7    Kc8    Kc9    @MINS  _
-_      F2     F5     F8     F11    F14    _      _      @COLN  Kc4    Kc5    Kc6    @PLUS  _
+_      F2     F5     F8     F11    F14    @DNE   @DNE   @COLN  Kc4    Kc5    Kc6    @PLUS  _
+_      F3     F6     F9     F12    F15    _      _      Dot    Kc1    Kc2    Kc3    Kc0    _
 @DNE   _      _      _      _      _      _      _      _      _      _      _      _      @DNE
 """
 
