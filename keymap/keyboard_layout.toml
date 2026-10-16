@@ -4,6 +4,7 @@ ENT = "MT(Enter,RCtrl,mods)"
 SPC = "LT(NUM,Space)"
 DNE = "No"
 GAM = "TG(GAME)"
+BTL = "Bootloader"
 
 EXLM = "WM(Kc1,LShift)"
 AT   = "WM(Kc2,LShift)"
@@ -84,7 +85,7 @@ name = "NAV"
 encoders = [["_", "_"], ["_", "_"]]
 keys = """
 _      No     No     No     No     No     @DNE   @DNE   No     No     No     No     No     _
-_      No     No     No     No     No     @DNE   @DNE   Left   Down   Up     Right  No     _
+_      @BTL   No     No     No     No     @DNE   @DNE   Left   Down   Up     Right  No     _
 _      No     No     No     No     No     @GAM   _      No     No     No     No     No     _
 @DNE   _      _      _      _      _      _      _      _      _      _      _      _      @DNE
 """

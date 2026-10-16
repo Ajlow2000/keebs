@@ -41,7 +41,7 @@ serial = [{ instance = "UART0", tx_pin = "PIN_28", rx_pin = "PIN_29" }]
 matrix_type = "normal"
 row_pins = ["PIN_8", "PIN_11", "PIN_7", "PIN_6"]
 col_pins = ["PIN_5", "PIN_10", "PIN_9", "PIN_4", "PIN_25", "PIN_20", "PIN_19"]
-bootmagic = [0, 0]
+bootmagic = [0, 1]
 
 [[split.peripheral.input_device.encoder]]
 pin_a = "PIN_23"
