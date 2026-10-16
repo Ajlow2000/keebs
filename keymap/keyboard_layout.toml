@@ -66,7 +66,7 @@ encoders = [["AudioVolUp", "AudioVolDown"], ["MouseWheelUp", "MouseWheelDown"]]
 keys = """
 Tab    B      L      D      W      Z      @DNE   @DNE   Quote  F      O      U      J      Tab
 @ESC   N      R      T      S      G      @DNE   @DNE   Y      H      A      E      I      @ENT
-LShift  Q      X      M      C      V      F5     F11    K      P      Dot    Minus  Comma  RShift
+LShift Q      X      M      C      V      F5     F11    K      P      Dot    Minus  Comma  RShift
 @DNE   MO(SYM)  AudioMute  MouseBtn1  LAlt   Space  LGui   Tab    @SPC   Backspace  Delete  MouseBtn2  MO(NAV)  @DNE
 """
 
@@ -85,8 +85,8 @@ name = "NAV"
 encoders = [["_", "_"], ["_", "_"]]
 keys = """
 _      No     No     No     No     No     @DNE   @DNE   No     No     No     No     No     _
-_      @BTL   No     No     No     No     @DNE   @DNE   Left   Down   Up     Right  No     _
-_      No     No     No     No     No     @GAM   _      No     No     No     No     No     _
+_      @BTL   No     No     No     @GAM   @DNE   @DNE   Left   Down   Up     Right  No     _
+_      No     No     No     No     No     _      _      No     No     No     No     No     _
 @DNE   _      _      _      _      _      _      _      _      _      _      _      _      @DNE
 """
 
@@ -105,7 +105,7 @@ name = "GAME"
 encoders = [["_", "_"], ["_", "_"]]
 keys = """
 Tab    T      Q      W      E      R      @DNE   @DNE   Y      U      I      O      P      Escape
-G      LShift  A      S      D      F      @DNE   @DNE   H      J      K      L      Semicolon  Enter
+G      LShift A      S      D      F      @DNE   @DNE   H      J      K      L      Semicolon  Enter
 LCtl   Z      X      C      V      B      _      _      N      M      F      Comma  Slash  Enter
 @DNE   MO(SYM)  _      _      LCtrl  Space  LGui   F4     _      _      _      _      _      @DNE
 """
