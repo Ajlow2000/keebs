@@ -2,6 +2,8 @@
 ESC = "MT(Escape,LCtrl,mods)"
 ENT = "MT(Enter,RCtrl,mods)"
 SPC = "LT(NUM,Space)"
+DNE = "No"
+GAM = "TG(GAME)"
 
 EXLM = "WM(Kc1,LShift)"
 AT   = "WM(Kc2,LShift)"
@@ -61,48 +63,48 @@ layers = 5
 name = "BASE"
 encoders = [["AudioVolUp", "AudioVolDown"], ["MouseWheelUp", "MouseWheelDown"]]
 keys = """
-Tab    B      L      D      W      Z      No         No   Quote  F      O      U      J      Tab
-@ESC   N      R      T      S      G      No         No   Y      H      A      E      I      @ENT
-LShift Q      X      M      C      V      F5         F11  K      P      Dot    Minus  Comma  RShift
-No     MO(SYM)  AudioMute  MouseBtn1  LAlt  Space  LGui  Tab  @SPC  Backspace  Delete  MouseBtn2  MO(NAV)  No
+Tab    B      L      D      W      Z      @DNE   @DNE   Quote  F      O      U      J      Tab
+@ESC   N      R      T      S      G      @DNE   @DNE   Y      H      A      E      I      @ENT
+LShift  Q      X      M      C      V      F5     F11    K      P      Dot    Minus  Comma  RShift
+@DNE   MO(SYM)  AudioMute  MouseBtn1  LAlt   Space  LGui   Tab    @SPC   Backspace  Delete  MouseBtn2  MO(NAV)  @DNE
 """
 
 [[keymap.layer]]
 name = "SYM"
 encoders = [["_", "_"], ["_", "_"]]
 keys = """
-_      @BSLS  @QUOT  @DQUO  @PERC  @QUES  _      _      @EXLM  @RBRC  @LBRC  @GRV   @COLN  _
-_      @CIRC  @EQL   @UNDS  @DLR   @ASTR  _      _      @AT    @RCBR  @LCBR  @TILD  @SCLN  _
+_      @BSLS  @QUOT  @DQUO  @PERC  @QUES  @DNE   @DNE   @EXLM  @RBRC  @LBRC  @GRV   @COLN  _
+_      @CIRC  @EQL   @UNDS  @DLR   @ASTR  @DNE   @DNE   @AT    @RCBR  @LCBR  @TILD  @SCLN  _
 _      @LABK  @PIPE  @MINS  @RABK  @SLSH  _      _      @PLUS  @RPRN  @LPRN  @HASH  @AMPR  _
-_      _      _      _      _      _      _      _      _      _      _      _      _      _
+@DNE   _      _      _      _      _      _      _      _      _      _      _      _      @DNE
 """
 
 [[keymap.layer]]
 name = "NAV"
 encoders = [["_", "_"], ["_", "_"]]
 keys = """
-_      No     No     No     No     No     _          _    No     No     No     No     No     _
-_      No     No     No     No     TG(GAME)  _       _    Left   Down   Up     Right  No     _
-_      No     No     No     No     No     _          _    No     No     No     No     No     _
-_      _      _      _      _      _      _          _    _      _      _      _      _      _
+_      No     No     No     No     No     @DNE   @DNE   No     No     No     No     No     _
+_      No     No     No     No     No     @DNE   @DNE   Left   Down   Up     Right  No     _
+_      No     No     No     No     No     @GAM   _      No     No     No     No     No     _
+@DNE   _      _      _      _      _      _      _      _      _      _      _      _      @DNE
 """
 
 [[keymap.layer]]
 name = "NUM"
 encoders = [["_", "_"], ["_", "_"]]
 keys = """
-_      No     No     No     No     No     _          _    No     No     No     No     No     _
-_      F1     F4     F7     F10    F13    _          _    @SLSH  Kc7    Kc8    Kc9    @MINS  _
-_      F2     F5     F8     F11    F14    _          _    @COLN  Kc4    Kc5    Kc6    @PLUS  _
-_      _      _      _      _      _      _          _    _      _      _      _      _      _
+_      No     No     No     No     No     @DNE   @DNE   No     No     No     No     No     _
+_      F1     F4     F7     F10    F13    @DNE   @DNE   @SLSH  Kc7    Kc8    Kc9    @MINS  _
+_      F2     F5     F8     F11    F14    _      _      @COLN  Kc4    Kc5    Kc6    @PLUS  _
+@DNE   _      _      _      _      _      _      _      _      _      _      _      _      @DNE
 """
 
 [[keymap.layer]]
 name = "GAME"
 encoders = [["_", "_"], ["_", "_"]]
 keys = """
-Tab    T      Q      W      E      R      _          _    Y      U      I      O      P         Escape
-G      LShift A      S      D      F      _          _    H      J      K      L      Semicolon Enter
-LCtl   Z      X      C      V      B      _          _    N      M      F      Comma  Slash     Enter
-_      MO(SYM)  _      _      LCtrl  Space  LGui     F4   _      _      _      _      _      _
+Tab    T      Q      W      E      R      @DNE   @DNE   Y      U      I      O      P      Escape
+G      LShift  A      S      D      F      @DNE   @DNE   H      J      K      L      Semicolon  Enter
+LCtl   Z      X      C      V      B      _      _      N      M      F      Comma  Slash  Enter
+@DNE   MO(SYM)  _      _      LCtrl  Space  LGui   F4     _      _      _      _      _      @DNE
 """
