@@ -82,8 +82,8 @@ name = "NAV"
 encoders = [["_", "_"], ["_", "_"]]
 keys = """
 _      No     No     No     No     No     _          _    No     No     No     No     No     _
-_      No     No     No     No     No     _          _    No     No     No     No     No     _
 _      No     No     No     No     TG(GAME)  _       _    Left   Down   Up     Right  No     _
+_      No     No     No     No     No     _          _    No     No     No     No     No     _
 _      _      _      _      _      _      _          _    _      _      _      _      _      _
 """
 
@@ -101,8 +101,8 @@ _      _      _      _      _      _      _          _    _      _      _      _
 name = "GAME"
 encoders = [["_", "_"], ["_", "_"]]
 keys = """
-Escape Kc1    Kc2    Kc3    Kc4    Kc5    _          _    Kc6    Kc7    Kc8    Kc9    Kc0    Backspace
-Tab    T      Q      W      E      R      _          _    Y      U      I      O      P      Escape
-G      LShift A      S      D      F      _          _    H      J      K      L      Semicolon  Enter
+Tab    T      Q      W      E      R      _          _    Y      U      I      O      P         Escape
+G      LShift A      S      D      F      _          _    H      J      K      L      Semicolon Enter
+LCtl   Z      X      C      V      B      _          _    N      M      F      Comma  Slash     Enter
 _      MO(SYM)  _      _      LCtrl  Space  LGui     F4   _      _      _      _      _      _
 """
