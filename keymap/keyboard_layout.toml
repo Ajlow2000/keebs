@@ -7,6 +7,7 @@ GAM  = "TG(GAME)"
 BTL  = "Bootloader"
 SYM  = "MO(SYM)"
 NAV  = "MO(NAV)"
+TYP  = "MO(TYPE)"
 MB1  = "MouseBtn1"
 MB2  = "MouseBtn2"
 WHLU = "MouseWheelUp"
@@ -69,8 +70,13 @@ map = """
 # row 2: .     .     .     .     .     .     F       F     .     .     .     .     .     .
 # row 3: xx    C     enc   E     A     B     D       D     B     A     E     enc   C     xx
 
+# Layer order sets precedence: a press resolves from the highest active layer
+# downward, so GAME sits below SYM/NAV/NUM (holding NAV still reaches @GAM),
+# and TYPE sits above GAME to shadow it. TYPE is an exact copy of BASE, held
+# via @TYP from GAME; build.rs fails the build if the two ever drift apart.
+
 [keymap]
-layers = 5
+layers = 6
 
 [[keymap.layer]]
 name = "BASE"
@@ -89,10 +95,20 @@ keys = """
 Tab   T     Q     W     E     R     @DNE    @DNE  Y     U     I     O     P     Esc
 G     LSft  A     S     D     F     @DNE    @DNE  H     J     K     L     Scln  Enter
 LCtl  Z     X     C     V     B     Esc     _     N     M     F     Comma Slash Enter
-@DNE  Kc1   Dot   LAlt  LCtl  Space M       F4    _     _     _     _     _     @DNE
+@DNE  Kc1   Dot   LAlt  LCtl  Space M       @TYP  _     _     _     _     _     @DNE
 """
 # .   .     .     .     .     .     F       F     .     .     .     .     .     .
 # xx  C     enc   E     A     B     D       D     B     A     E     enc   C     xx
+
+[[keymap.layer]]
+name = "TYPE"
+encoders = [["_", "_"], ["_", "_"]]
+keys = """
+Tab   B     L     D     W     Z     @DNE    @DNE  Quote F     O     U     J     Tab
+@ESC  N     R     T     S     G     @DNE    @DNE  Y     H     A     E     I     @ENT
+LSft  Q     X     M     C     V     F5      F11   K     P     Dot   Minus Comma RSft
+@DNE  @SYM  Mute  @MB1  LAlt  Space LGui    Tab   @SPC  Bspc  Del   @MB2  @NAV  @DNE
+"""
 
 [[keymap.layer]]
 name = "SYM"
