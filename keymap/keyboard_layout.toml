@@ -71,6 +71,16 @@ LShift Q      X      M      C      V      F5     F11    K      P      Dot    Min
 """
 
 [[keymap.layer]]
+name = "GAME"
+encoders = [["_", "_"], ["_", "_"]]
+keys = """
+Tab    T      Q      W      E      R      @DNE   @DNE   Y      U      I      O      P      Escape
+G      LShift A      S      D      F      @DNE   @DNE   H      J      K      L      Semicolon  Enter
+LCtl   Z      X      C      V      B      _      _      N      M      F      Comma  Slash  Enter
+@DNE   MO(SYM)  _      _      LCtrl  Space  LGui   F4     _      _      _      _      _      @DNE
+"""
+
+[[keymap.layer]]
 name = "SYM"
 encoders = [["_", "_"], ["_", "_"]]
 keys = """
@@ -98,14 +108,4 @@ _      F1     F4     F7     F10    F13    @DNE   @DNE   @SLSH  Kc7    Kc8    Kc9
 _      F2     F5     F8     F11    F14    @DNE   @DNE   @COLN  Kc4    Kc5    Kc6    @PLUS  _
 _      F3     F6     F9     F12    F15    _      _      Dot    Kc1    Kc2    Kc3    Kc0    _
 @DNE   _      _      _      _      _      _      _      _      _      _      _      _      @DNE
-"""
-
-[[keymap.layer]]
-name = "GAME"
-encoders = [["_", "_"], ["_", "_"]]
-keys = """
-Tab    T      Q      W      E      R      @DNE   @DNE   Y      U      I      O      P      Escape
-G      LShift A      S      D      F      @DNE   @DNE   H      J      K      L      Semicolon  Enter
-LCtl   Z      X      C      V      B      _      _      N      M      F      Comma  Slash  Enter
-@DNE   MO(SYM)  _      _      LCtrl  Space  LGui   F4     _      _      _      _      _      @DNE
 """
